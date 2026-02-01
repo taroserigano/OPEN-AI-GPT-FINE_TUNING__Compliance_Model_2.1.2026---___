@@ -10,3 +10,7 @@
 ## Loss Decreasing as Accuracy Goes Up
 
 <img width="1896" height="930" alt="image" src="https://github.com/user-attachments/assets/9154afe5-aa65-47f3-ac2f-0f8f8ffc2638" />
+
+## Accuracy and Loss Still Improving while Stablizing 
+
+<img width="1894" height="921" alt="image" src="https://github.com/user-attachments/assets/781b3423-59a5-4730-abad-0e362cfb7d5f" />
