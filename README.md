@@ -14,3 +14,7 @@
 ## Accuracy and Loss Still Improving while Stablizing 
 
 <img width="1894" height="921" alt="image" src="https://github.com/user-attachments/assets/781b3423-59a5-4730-abad-0e362cfb7d5f" />
+
+## Completed:
+
+<img width="1908" height="929" alt="image" src="https://github.com/user-attachments/assets/e3ad0a59-1027-4972-b059-94ad7d319ac5" />
