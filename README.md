@@ -7,16 +7,7 @@
 
 <img width="1907" height="940" alt="image" src="https://github.com/user-attachments/assets/c5c3ae6f-c5fc-4380-800a-dca9a1fe2bb7" />
 
-## Accuracy and Loss Still Improving while Stablizing
 
-<img width="1894" height="921" alt="image" src="https://github.com/user-attachments/assets/42dcb968-2f03-4c4f-a0cf-c58e73d18797" />
-
-## Fine Tuning Successful
-<img width="1908" height="929" alt="image" src="https://github.com/user-attachments/assets/711c168b-a636-4249-bd42-ea25c3b800f6" />
-
-## Verify Accuracy of Fine Tuned Model in Playground
-
-<img width="1897" height="923" alt="image" src="https://github.com/user-attachments/assets/38d0df33-53c4-4cae-b8cd-9400e09ae34f" />
 
 ## 🎯 Project Overview
 
@@ -51,6 +42,17 @@ Production-ready fine-tuning pipeline for GPT-4o-mini focused on **enterprise po
 - **Data Format:** JSONL (164 training examples)
 - **Evaluation:** Custom keyword-based scoring system with progressive thresholds
 - **Monitoring:** Real-time progress tracking, token usage analytics, latency metrics
+
+## Accuracy and Loss Still Improving while Stablizing
+
+<img width="1894" height="921" alt="image" src="https://github.com/user-attachments/assets/42dcb968-2f03-4c4f-a0cf-c58e73d18797" />
+
+## Fine Tuning Successful
+<img width="1908" height="929" alt="image" src="https://github.com/user-attachments/assets/711c168b-a636-4249-bd42-ea25c3b800f6" />
+
+## Verify Accuracy of Fine Tuned Model in Playground
+
+<img width="1897" height="923" alt="image" src="https://github.com/user-attachments/assets/38d0df33-53c4-4cae-b8cd-9400e09ae34f" />
 
 ## 🏗️ Architecture
 
