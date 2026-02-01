@@ -1,10 +1,13 @@
-# 🚀 GPT-4o-Mini Fine-Tuning: Enterprise Policy Compliance AI
+# 🚀 GPT-4 Fine-Tuning: Enterprise Policy Compliance AI
 
 [![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o--mini-412991?logo=openai)](https://openai.com)
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Performance](https://img.shields.io/badge/Accuracy-+121%25-success)](README.md)
 [![Efficiency](https://img.shields.io/badge/Tokens--20%25-blue)](README.md)
+
+
+<img width="1907" height="940" alt="image" src="https://github.com/user-attachments/assets/2a2f3ebc-1d46-4207-8182-a0959c73406d" />
 
 **Keywords:** `OpenAI Fine-Tuning` `GPT-4o-Mini` `LLM Optimization` `Enterprise AI` `Policy Compliance` `Performance Benchmarking` `Token Efficiency` `Model Evaluation` `Python` `API Integration` `MLOps` `Production AI`
 
@@ -51,6 +54,24 @@
 - **Data Format:** JSONL (164 training examples)
 - **Evaluation:** Custom keyword-based scoring system with progressive thresholds
 - **Monitoring:** Real-time progress tracking, token usage analytics, latency metrics
+
+## Accuracy and Loss Still Improving while Stablizing
+
+
+<img width="1894" height="921" alt="image" src="https://github.com/user-attachments/assets/1fc7aad4-1e8d-4578-a4e6-e9f4e89a3004" />
+
+## Training Successful
+
+
+
+<img width="1908" height="929" alt="image" src="https://github.com/user-attachments/assets/9b7e1d21-6b9f-45f2-9de8-84c72779a3a0" />
+
+
+## Verify Accuracy of Fine Tuned Model in Playground 
+
+<img width="1897" height="923" alt="image" src="https://github.com/user-attachments/assets/688e9769-203b-4517-9c73-0ba277d6348f" />
+
+
 
 ## 🏗️ Architecture
 
