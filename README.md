@@ -18,3 +18,7 @@
 ## Completed:
 
 <img width="1908" height="929" alt="image" src="https://github.com/user-attachments/assets/e3ad0a59-1027-4972-b059-94ad7d319ac5" />
+
+## Verify Accuracy of Fine Tuned Model in Playground
+
+<img width="1897" height="923" alt="image" src="https://github.com/user-attachments/assets/64aa0764-7269-4140-8dd2-df638a2987b1" />
