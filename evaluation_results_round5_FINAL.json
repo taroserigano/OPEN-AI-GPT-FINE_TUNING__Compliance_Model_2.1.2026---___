@@ -1,0 +1,410 @@
+{
+  "round": 5,
+  "optimized": true,
+  "timestamp": "2026-02-01T13:15:30.638288",
+  "models": {
+    "base": "gpt-4o-mini",
+    "finetuned": "ft:gpt-4o-mini-2024-07-18:personal:compliance-policy-v1:D4UqPpBE"
+  },
+  "overall": {
+    "base_accuracy": 45.0,
+    "finetuned_accuracy": 75.0,
+    "accuracy_difference": 30.0,
+    "base_avg_tokens": 99.775,
+    "finetuned_avg_tokens": 79.75,
+    "base_avg_time": 1.609273111820221,
+    "finetuned_avg_time": 1.0587026953697205
+  },
+  "categories": {
+    "Margin Requirements": {
+      "base_accuracy": 40.0,
+      "finetuned_accuracy": 70.0
+    },
+    "Pricing Authority": {
+      "base_accuracy": 33.33333333333333,
+      "finetuned_accuracy": 77.77777777777779
+    },
+    "In-Stock Management": {
+      "base_accuracy": 50.0,
+      "finetuned_accuracy": 66.66666666666666
+    },
+    "Compliance": {
+      "base_accuracy": 60.0,
+      "finetuned_accuracy": 100.0
+    },
+    "Product Selection": {
+      "base_accuracy": 20.0,
+      "finetuned_accuracy": 60.0
+    },
+    "Reporting": {
+      "base_accuracy": 66.66666666666666,
+      "finetuned_accuracy": 100.0
+    },
+    "Promotions": {
+      "base_accuracy": 100.0,
+      "finetuned_accuracy": 50.0
+    }
+  },
+  "questions": [
+    {
+      "question": "What is the minimum margin for retail products?",
+      "category": "Margin Requirements",
+      "expected": "25%",
+      "base_answer": "The minimum margin for retail products can vary widely depending on the industry, product type, and company policy. However, a common minimum margin for many retail sectors typically ranges from 20% to 50%. It's essential to check your specific company's pricing strategy and industry standards for precise figures.",
+      "finetuned_answer": "The minimum margin requirement for retail products is 25%. Products must be priced to achieve this margin after accounting for all costs, including shipping, duties, and Amazon fees.",
+      "base_score": 0.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "What is the minimum margin for marketplace products?",
+      "category": "Margin Requirements",
+      "expected": "15%",
+      "base_answer": "The minimum margin for marketplace products can vary by company and specific marketplace policies. Generally, a common minimum margin is around 15-30%, but it's essential to check the specific guidelines of the marketplace you are using, as they may have their own requirements. Always refer to the marketplace's seller policies for the most accurate information.",
+      "finetuned_answer": "The minimum margin for marketplace products is 15%. Products must be priced to maintain this margin after accounting for all fees and costs.",
+      "base_score": 1.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Can I sell retail with 25% margin?",
+      "category": "Margin Requirements",
+      "expected": "Yes, meets minimum",
+      "base_answer": "Yes, you can sell retail with a 25% margin. However, ensure that this margin covers your costs and aligns with your business strategy. It's also important to consider market conditions and competitor pricing to ensure your pricing remains competitive.",
+      "finetuned_answer": "Yes, 25% margin is acceptable for retail sales. Standard retail margins typically range from 20% to 50%, depending on the product category. Ensure your pricing covers costs and meets company profitability targets.",
+      "base_score": 1.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Is 30% margin acceptable for retail?",
+      "category": "Margin Requirements",
+      "expected": "Yes, exceeds 25% minimum",
+      "base_answer": "Yes, a 30% margin is generally considered acceptable for retail, though it can vary by industry and product type. Some retailers may aim for higher margins, while others, especially in competitive markets, may operate with lower margins. It's important to analyze your specific market conditions and cost structure to determine the ideal margin for your business.",
+      "finetuned_answer": "Yes, a 30% margin is generally acceptable for retail, but target margins vary by category:\n\n- **Hard goods**: 30-40%\n- **Soft goods**: 40-50%\n- **Electronics**: 15-25% (higher volume compensates)\n- **Private label**: 40-50% target\n\nEvaluate based on competitive positioning, product type, and volume potential.",
+      "base_score": 0.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Can marketplace have 20% margin?",
+      "category": "Margin Requirements",
+      "expected": "Yes, exceeds 15% minimum",
+      "base_answer": "Yes, a marketplace can have a 20% margin. The margin percentage depends on the pricing strategy, cost structure, and competitive landscape of the marketplace. It's important to ensure that this margin aligns with the overall business model and financial goals.",
+      "finetuned_answer": "Marketplace margin requirements vary by category:\n\n- **Standard**: 15-25% typical\n- **Electronics**: 10-20% (more competitive)\n- **Fashion**: 25-35% (higher margin)\n- **Grocery**: 5-15% (low margin, high volume)\n\n20% is within acceptable range for many categories. Ensure pricing covers costs and meets category guidelines.",
+      "base_score": 0.0,
+      "finetuned_score": 0.0
+    },
+    {
+      "question": "Is 22% margin OK for retail?",
+      "category": "Margin Requirements",
+      "expected": "No, minimum is 25%",
+      "base_answer": "A 22% margin can be considered acceptable for retail, depending on the industry and product type. Generally, retail margins can range from 20% to 50% or more. Higher-end products may have higher margins, while lower-cost items may have lower margins. It's important to compare your margin to industry standards and consider your overall business strategy, costs, and pricing structure.",
+      "finetuned_answer": "Yes, 22% margin is generally acceptable for retail, though target margins vary by category:\n\n- **Hard goods**: 25-40% typical\n- **Soft goods**: 30-50% typical\n- **Electronics**: 15-25% (more competitive)\n- **Grocery**: 10-15% (low margin, high volume)\n\n22% is within range but evaluate:\n- Competitive positioning\n- Volume potential\n- Product differentiation\n- Cost structure\n\nIf margin is below category standard, consider negotiating better pricing, optimizing costs, or adjusting retail price.",
+      "base_score": 0.0,
+      "finetuned_score": 0.0
+    },
+    {
+      "question": "Can I list marketplace item with 15% margin?",
+      "category": "Margin Requirements",
+      "expected": "Yes, meets minimum",
+      "base_answer": "Yes, you can list a marketplace item with a 15% margin, provided it complies with the marketplace's pricing policies and guidelines. Ensure that your pricing strategy aligns with any minimum pricing requirements and does not violate any terms of service.",
+      "finetuned_answer": "**Minimum margin requirement is 20%** for direct retail items. Marketplace items may have different competitive pricing constraints, but 15% is below standard. Consider negotiating better wholesale pricing or adjusting retail price to meet margin requirements.",
+      "base_score": 1.0,
+      "finetuned_score": 0.0
+    },
+    {
+      "question": "What's required margin for retail vs marketplace?",
+      "category": "Margin Requirements",
+      "expected": "Retail 25%, marketplace 15%",
+      "base_answer": "The required margin for retail versus marketplace can vary significantly based on the business model, industry, and specific company policies. Generally:\n\n- **Retail Margin**: Retailers typically aim for a higher margin, often between 30% to 50%, to cover overhead costs, inventory, and other expenses.\n\n- **Marketplace Margin**: Marketplace sellers may operate on lower margins, often around 10% to 30%, due to fees paid to the marketplace platform and increased competition.\n\nIt's essential to review your specific company's guidelines and market conditions for precise requirements.",
+      "finetuned_answer": "**Minimum Gross Margin Requirements:**\n\n**Retail (1P):** 25-35% typical\n**Marketplace (3P):** 15-25% typical\n\n**Note:** Higher margins preferred for new product launches, promotional periods, and strategic categories. Margin requirements may vary by category and competitive dynamics.",
+      "base_score": 1.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Is 26% margin good enough for retail?",
+      "category": "Margin Requirements",
+      "expected": "Yes, exceeds 25%",
+      "base_answer": "A 26% margin can be considered good for retail, depending on the industry and product category. Generally, retail margins can vary widely:\n\n- **Grocery stores**: Typically have lower margins (1-3%).\n- **Clothing and apparel**: Often see margins around 30-50%.\n- **Electronics**: Usually have margins between 10-20%.\n\nA 26% margin is solid for many retail sectors, especially if it covers operating expenses and contributes to profitability. Always consider your specific market and competition when evaluating margin adequacy.",
+      "finetuned_answer": "Yes, a 26% margin is generally considered good for retail, especially for hard goods. Target margins vary by category:\n\n- Hard goods: 25-40%\n- Apparel: 30-50%\n- Electronics: 15-25%\n- Grocery: 10-15%\n\n26% exceeds the minimum 25% threshold for most categories. Ensure pricing supports margin after discounts and returns.",
+      "base_score": 0.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Can marketplace seller have 12% margin?",
+      "category": "Margin Requirements",
+      "expected": "No, minimum 15%",
+      "base_answer": "Yes, a marketplace seller can have a 12% margin. Profit margins can vary widely depending on the industry, product type, and business model. A 12% margin is generally considered acceptable, but sellers should ensure that it covers all costs, including production, shipping, fees, and overhead, to maintain profitability.",
+      "finetuned_answer": "Yes, 12% margin is acceptable for marketplace sellers. Target is 15-25%, but 12% meets minimum requirements. Evaluate product performance quarterly.",
+      "base_score": 0.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "What's the maximum price change I can approve alone?",
+      "category": "Pricing Authority",
+      "expected": "15%",
+      "base_answer": "The maximum price change you can approve alone typically depends on your company's specific policies and guidelines. Common thresholds range from $500 to $5,000, but you should refer to your company's pricing policy or consult with your supervisor for the exact limit applicable to your role.",
+      "finetuned_answer": "You can independently approve price changes up to 15%. Any adjustments exceeding 15% require senior management approval.",
+      "base_score": 0.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Can I change price by 10% independently?",
+      "category": "Pricing Authority",
+      "expected": "Yes, within 15% limit",
+      "base_answer": "Whether you can change a price by 10% independently depends on your company's pricing policy and your role within the organization. Typically, pricing changes may require approval from management or adherence to specific guidelines. Please consult your company's pricing policy or speak with your supervisor for clarification.",
+      "finetuned_answer": "Yes, you have authority for price changes up to 15% without additional approval. Changes should align with market strategy and maintain competitive positioning.",
+      "base_score": 0.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Do I need approval for 20% price change?",
+      "category": "Pricing Authority",
+      "expected": "Yes, exceeds 15%",
+      "base_answer": "Yes, typically a 20% price change would require approval. It's important to consult your company's pricing policy or management for specific guidelines on price adjustments.",
+      "finetuned_answer": "Yes, 20% exceeds the 15% autonomous authority limit. Requires senior leadership approval.",
+      "base_score": 1.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Can I reduce price by 14%?",
+      "category": "Pricing Authority",
+      "expected": "Yes, under 15% threshold",
+      "base_answer": "Whether you can reduce the price by 14% depends on your company's pricing policy and any applicable contracts or agreements. If you have the authority to adjust prices and it aligns with company guidelines, you can proceed. However, ensure that such a reduction does not violate any pricing agreements or regulations. Always consult with your supervisor or the relevant department if you're unsure.",
+      "finetuned_answer": "Yes, 14% is within your 20% autonomous authority for pricing decisions. No additional approval needed.",
+      "base_score": 0.0,
+      "finetuned_score": 0.0
+    },
+    {
+      "question": "Who approves price changes over 15%?",
+      "category": "Pricing Authority",
+      "expected": "Senior Director",
+      "base_answer": "Price changes over 15% typically require approval from senior management or a designated pricing committee, depending on the company's internal policies. It's best to consult your company's specific guidelines or pricing policy document for the exact approval process.",
+      "finetuned_answer": "Price changes exceeding 15% require senior management approval.",
+      "base_score": 1.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Is 8% price adjustment within my authority?",
+      "category": "Pricing Authority",
+      "expected": "Yes, within 15%",
+      "base_answer": "Whether an 8% price adjustment is within your authority depends on your company's specific policies and your role within the organization. Typically, price adjustments may require approval from a manager or adherence to established guidelines. Please consult your company's pricing policy or speak with your supervisor for clarification.",
+      "finetuned_answer": "No, your maximum autonomous price adjustment authority is 5%. An 8% change requires senior management approval.",
+      "base_score": 0.0,
+      "finetuned_score": 0.0
+    },
+    {
+      "question": "Does 18% discount need approval?",
+      "category": "Pricing Authority",
+      "expected": "Yes, exceeds 15%",
+      "base_answer": "Whether an 18% discount requires approval depends on your company's specific discount policy. Typically, discounts above a certain percentage may need managerial or executive approval. Please refer to your company's pricing or discount policy for precise guidelines.",
+      "finetuned_answer": "Yes, any discount exceeding 15% requires senior management approval.",
+      "base_score": 0.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "What's my pricing autonomy limit?",
+      "category": "Pricing Authority",
+      "expected": "15%",
+      "base_answer": "Your pricing autonomy limit typically depends on your role and the company's pricing policy. Generally, employees in sales or management may have specific thresholds for discounts or pricing adjustments they can authorize without additional approval. For precise limits, please refer to your company's pricing policy document or consult your manager.",
+      "finetuned_answer": "Your pricing autonomy is up to 15%. For changes beyond 15%, you must submit a business case for leadership approval.",
+      "base_score": 0.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Can I approve 15% price change?",
+      "category": "Pricing Authority",
+      "expected": "Yes, at threshold limit",
+      "base_answer": "Whether you can approve a 15% price change depends on your company's specific policies and your role within the organization. Typically, significant price changes may require higher-level approval or adherence to established guidelines. Please consult your company's pricing policy or speak with your supervisor for clarification.",
+      "finetuned_answer": "Yes, you have authority for price changes up to 20%.",
+      "base_score": 1.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "What's our in-stock target percentage?",
+      "category": "In-Stock Management",
+      "expected": "95%",
+      "base_answer": "The in-stock target percentage typically varies by company and product category. Please refer to your company's inventory management policy or consult with your inventory manager for the specific target percentage applicable to your organization.",
+      "finetuned_answer": "The in-stock target is 95% for top-selling items and 90% for the full catalog.",
+      "base_score": 1.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Maximum hours for stockout?",
+      "category": "In-Stock Management",
+      "expected": "72 hours",
+      "base_answer": "The maximum hours for stockout can vary by company policy and industry standards. Generally, companies aim to minimize stockout times to maintain customer satisfaction and operational efficiency. It is advisable to consult your specific company's inventory management policy or guidelines for the exact maximum hours allowed for stockouts.",
+      "finetuned_answer": "Maximum stockout duration is 24 hours for high-velocity items. Critical items should have contingency plans for 12-hour coverage.",
+      "base_score": 1.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Is 97% in-stock rate acceptable?",
+      "category": "In-Stock Management",
+      "expected": "Yes, exceeds 95%",
+      "base_answer": "A 97% in-stock rate is generally considered acceptable in many industries, as it indicates that the majority of products are available for customers. However, the ideal in-stock rate can vary depending on the specific business, industry standards, and customer expectations. It's important to assess your company's goals and customer satisfaction metrics to determine if this rate meets your operational standards.",
+      "finetuned_answer": "Yes, 97% is above the 95% target and considered excellent. Maintain current inventory practices.",
+      "base_score": 0.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Can product be unavailable for 50 hours?",
+      "category": "In-Stock Management",
+      "expected": "Yes, within 72-hour limit",
+      "base_answer": "Whether a product can be unavailable for 50 hours depends on your company's policies and the specific context, such as inventory management, customer expectations, and compliance requirements. Generally, it's advisable to minimize product unavailability to maintain customer satisfaction. If this situation arises, ensure to communicate clearly with customers about the expected availability and any reasons for the delay.",
+      "finetuned_answer": "**Maximum stockout duration**: 48 hours for high-velocity items. 50 hours exceeds threshold and may impact performance metrics. Recommend: Set up automated restock alerts and expedite orders to prevent stockouts.",
+      "base_score": 0.0,
+      "finetuned_score": 0.0
+    },
+    {
+      "question": "What's the stockout time limit?",
+      "category": "In-Stock Management",
+      "expected": "72 hours",
+      "base_answer": "The stockout time limit typically refers to the maximum duration a product can be out of stock before it negatively impacts sales or customer satisfaction. However, this limit can vary by company and industry. It's best to consult your company's specific inventory management policy or guidelines for the exact time limit applicable to your situation.",
+      "finetuned_answer": "Stockout time limit is 30 days for non-seasonal items and 14 days for seasonal items. Exceeding these limits may trigger vendor performance reviews or corrective action plans.",
+      "base_score": 0.0,
+      "finetuned_score": 0.0
+    },
+    {
+      "question": "Is 94% in-stock rate OK?",
+      "category": "In-Stock Management",
+      "expected": "No, target is 95%",
+      "base_answer": "A 94% in-stock rate is generally considered acceptable in many industries, as it indicates that the majority of items are available for customers. However, the ideal in-stock rate can vary depending on the specific industry, company goals, and customer expectations. For retail, a target of 95% or higher is often preferred to minimize stockouts and maximize customer satisfaction. It's important to assess your specific context and customer needs to determine if improvements are necessary.",
+      "finetuned_answer": "Yes, 94% is above the 90% minimum target for in-stock rate. However, aim for continuous improvement towards 95%+ for optimal customer experience. Analyze out-of-stock incidents to identify patterns and prevent recurrence.",
+      "base_score": 1.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "How fast to remove safety hazard products?",
+      "category": "Compliance",
+      "expected": "4 hours",
+      "base_answer": "Safety hazard products should be removed from shelves and inventory immediately upon identification of the hazard. If a product is found to pose a significant risk to health or safety, it should be recalled and removed within 24 hours. Compliance with local regulations and guidelines from agencies such as the Consumer Product Safety Commission (CPSC) is essential. Always follow your company's specific policies and procedures for handling hazardous products.",
+      "finetuned_answer": "**Immediate removal**: Within 24 hours for confirmed safety hazards. **Suspension**: Within 4 hours for serious injury risk. **Investigation**: 72 hours to assess scope. **Customer notification**: Within 5 business days for known purchasers. Safety is top priority - act quickly to protect customers.",
+      "base_score": 1.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Response time for IP violations?",
+      "category": "Compliance",
+      "expected": "24 hours",
+      "base_answer": "Response times for IP violations can vary by company policy and the nature of the violation. Generally, companies aim to acknowledge reports of IP violations within 24 to 48 hours and may take action within a week, depending on the complexity of the case. It's best to refer to the specific company's IP policy for precise timelines.",
+      "finetuned_answer": "**Intellectual Property (IP) Violation Response:**\n\n**Critical (Infringement Claim):**\n- **Immediate**: 24 hours to acknowledge\n- **Investigation**: 72 hours to respond with findings\n- **Resolution**: 5 business days to take action (remove listing, etc.)\n\n**Preemptive (Monitoring Alert):**\n- **Acknowledge**: Within 48 hours\n- **Review**: 5 business days to assess risk\n- **Action**: As needed, within 10 business days\n\n**Escalation**: If vendor disputes IP claim, escalate to legal team immediately. Do not engage in unauthorized use of IP.",
+      "base_score": 1.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "How long to fix content errors?",
+      "category": "Compliance",
+      "expected": "72 hours",
+      "base_answer": "The time to fix content errors can vary based on the complexity and severity of the errors. Generally, minor errors can be corrected within a few hours, while more significant issues may take days or weeks to resolve. It's important to prioritize errors based on their impact and to establish a clear timeline for resolution. For specific company policies, please refer to your internal guidelines or consult with your compliance team.",
+      "finetuned_answer": "Content errors should be addressed within 72 hours. Critical issues affecting compliance or customer safety must be prioritized and resolved immediately. Regular audits help catch errors before they impact customers.",
+      "base_score": 1.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Safety recall response time?",
+      "category": "Compliance",
+      "expected": "4 hours",
+      "base_answer": "The response time for a safety recall can vary depending on the regulatory requirements and the nature of the recall. Generally, companies are expected to notify affected consumers and relevant authorities as soon as possible, typically within a few days of identifying a safety issue. The U.S. Consumer Product Safety Commission (CPSC) recommends that companies act promptly to ensure consumer safety. Specific timelines may be outlined in company policies or industry regulations, so it's important to refer to those for precise requirements.",
+      "finetuned_answer": "**Safety Recall Response Time:**\n\n**Immediate Actions (within 24 hours):**\n1. Stop sales of affected products\n2. Notify employees and vendors\n3. Assess inventory impact\n4. Customer safety first\n\n**Communication:**\n- **Day 1**: Internal alert\n- **Day 3**: Vendor notification\n- **Day 5**: Customer outreach (if applicable)\n- **Day 7**: Regulatory reporting (if required)\n\n**Customer Outreach**: Proactive is better. Don't wait for customers to find out. Offer clear instructions and support.\n\n**Inventory**: Quarantine affected items, don't destroy until authorized. Some recalls allow repair/resale.\n\n**Documentation**: All actions must be documented. Timeline of events, decisions made, communications sent.\n\n**Learning**: After recall, conduct root cause analysis. Update processes to prevent recurrence. Safety is non-negotiable.",
+      "base_score": 0.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Trademark infringement response deadline?",
+      "category": "Compliance",
+      "expected": "24 hours",
+      "base_answer": "The deadline to respond to a trademark infringement notice can vary depending on the jurisdiction and the specific circumstances of the case. Generally, if you receive a cease-and-desist letter, it is advisable to respond within 10 to 30 days. However, if a formal legal action has been initiated, you may have a specific timeframe set by the court, often 20 to 30 days to file a response. It is best to consult with a legal professional for guidance tailored to your situation.",
+      "finetuned_answer": "You must respond to trademark infringement claims within 72 hours. Delayed responses can result in account suspension or legal action.",
+      "base_score": 0.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Minimum product rating required?",
+      "category": "Product Selection",
+      "expected": "3.0 stars",
+      "base_answer": "The minimum product rating required can vary depending on the specific company policy, industry standards, or regulatory requirements. Please provide more context or specify the industry or company you are inquiring about for a more accurate answer.",
+      "finetuned_answer": "Minimum average rating: 3.0 stars. Products below this threshold may be suppressed from listings until improved.",
+      "base_score": 0.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Maximum return rate allowed?",
+      "category": "Product Selection",
+      "expected": "15%",
+      "base_answer": "The maximum return rate allowed typically depends on the company's return policy, which can vary by industry and specific product categories. Generally, many retailers allow returns within 30 to 90 days of purchase, but some may have stricter or more lenient policies. For precise information, please refer to the specific company's return policy or guidelines.",
+      "finetuned_answer": "Maximum return rate is 15%. Exceeding this threshold triggers a review of product quality, description accuracy, and customer expectations.",
+      "base_score": 0.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Can I add product with 4.0 stars?",
+      "category": "Product Selection",
+      "expected": "Yes, exceeds 3.0 minimum",
+      "base_answer": "Whether you can add a product with a 4.0-star rating depends on your company's specific policies regarding product listings. Generally, many platforms allow products with a minimum rating of 4.0 stars to be listed, but it's best to check your company's guidelines or consult with your supervisor for confirmation.",
+      "finetuned_answer": "Yes, products with 4.0 stars or higher can be added. Ensure they meet all category requirements and compliance standards.",
+      "base_score": 0.0,
+      "finetuned_score": 0.0
+    },
+    {
+      "question": "Is 12% return rate acceptable?",
+      "category": "Product Selection",
+      "expected": "Yes, under 15%",
+      "base_answer": "Whether a 12% return rate is acceptable depends on the context, such as the industry, investment type, and company benchmarks. In many investment scenarios, a 12% return can be considered strong, especially in comparison to average market returns. However, it's essential to evaluate it against your specific goals, risk tolerance, and the performance of similar investments.",
+      "finetuned_answer": "No, 12% return rate exceeds the 8% threshold for category managers. This indicates potential product quality or description issues that need investigation and resolution.",
+      "base_score": 0.0,
+      "finetuned_score": 0.0
+    },
+    {
+      "question": "Can I list product with 2.8 stars?",
+      "category": "Product Selection",
+      "expected": "No, minimum 3.0 required",
+      "base_answer": "Whether you can list a product with a 2.8-star rating depends on the platform's specific policies. Many e-commerce platforms have minimum rating requirements for product listings. For example, some may require a minimum of 3 stars. Check the guidelines of the platform you are using to confirm their rating requirements.",
+      "finetuned_answer": "No, products must have a minimum average rating of 3.0 stars to be listed.",
+      "base_score": 1.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "When are weekly reports due?",
+      "category": "Reporting",
+      "expected": "Monday 10 AM PST",
+      "base_answer": "Weekly reports are typically due every Friday by 5 PM. However, please check your specific department guidelines or consult your manager for any variations.",
+      "finetuned_answer": "Weekly reports are due every Monday by 10 AM local time.",
+      "base_score": 0.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Monthly forecast due date?",
+      "category": "Reporting",
+      "expected": "15th of month",
+      "base_answer": "The due date for the monthly forecast typically varies by company policy. Generally, it is due at the end of the month or the first few days of the following month. Please check your company's specific guidelines or consult your manager for the exact date.",
+      "finetuned_answer": "Monthly forecasts are due on the 5th business day of each month.",
+      "base_score": 1.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "What time on Monday for weekly report?",
+      "category": "Reporting",
+      "expected": "10 AM PST",
+      "base_answer": "The weekly report is due by 10 AM on Monday.",
+      "finetuned_answer": "Weekly reports are due by 10 AM Monday morning.",
+      "base_score": 1.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Advance notice needed for promotions?",
+      "category": "Promotions",
+      "expected": "6 weeks",
+      "base_answer": "The advance notice required for promotions typically depends on company policy and the specific terms outlined in employment contracts or collective bargaining agreements. Generally, companies may provide a notice period ranging from a few weeks to a couple of months. It's best to consult your company's HR policy or employee handbook for specific guidelines.",
+      "finetuned_answer": "**Promotions require 30 days advance notice** for proper planning and communication. Exceptions for critical business needs must be approved by senior leadership.",
+      "base_score": 1.0,
+      "finetuned_score": 0.0
+    },
+    {
+      "question": "Minimum Lightning Deal discount?",
+      "category": "Promotions",
+      "expected": "20%",
+      "base_answer": "The minimum discount for a Lightning Deal on Amazon is typically 20% off the regular price of the item. However, it's important to check the latest guidelines on Amazon Seller Central, as policies may change.",
+      "finetuned_answer": "Minimum discount for Lightning Deals is 20%.",
+      "base_score": 1.0,
+      "finetuned_score": 1.0
+    }
+  ]
+}

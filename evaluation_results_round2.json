@@ -1,0 +1,286 @@
+{
+  "round": 2,
+  "timestamp": "2026-02-01T12:33:40.730376",
+  "models": {
+    "base": "gpt-4o-mini",
+    "finetuned": "ft:gpt-4o-mini-2024-07-18:personal:compliance-policy-v1:D4UqPpBE"
+  },
+  "overall": {
+    "base_accuracy": 52.88065843621399,
+    "finetuned_accuracy": 74.07407407407408,
+    "accuracy_difference": 21.193415637860085,
+    "base_avg_tokens": 115.36,
+    "finetuned_avg_tokens": 85.64,
+    "base_avg_time": 1.7681352519989013,
+    "finetuned_avg_time": 0.9607537174224854
+  },
+  "categories": {
+    "Pricing Authority": {
+      "base_accuracy": 25.0,
+      "finetuned_accuracy": 25.0
+    },
+    "Margin Requirements": {
+      "base_accuracy": 81.66666666666667,
+      "finetuned_accuracy": 96.66666666666667
+    },
+    "In-Stock Management": {
+      "base_accuracy": 33.33333333333333,
+      "finetuned_accuracy": 63.33333333333333
+    },
+    "Vendor Management": {
+      "base_accuracy": 47.5,
+      "finetuned_accuracy": 72.5
+    },
+    "Product Selection": {
+      "base_accuracy": 16.666666666666664,
+      "finetuned_accuracy": 66.66666666666666
+    },
+    "KPI Targets": {
+      "base_accuracy": 100.0,
+      "finetuned_accuracy": 66.66666666666666
+    },
+    "Compliance": {
+      "base_accuracy": 100.0,
+      "finetuned_accuracy": 100.0
+    },
+    "Reporting": {
+      "base_accuracy": 25.0,
+      "finetuned_accuracy": 90.0
+    },
+    "Promotions": {
+      "base_accuracy": 50.0,
+      "finetuned_accuracy": 50.0
+    },
+    "Training": {
+      "base_accuracy": 0.0,
+      "finetuned_accuracy": 100.0
+    }
+  },
+  "questions": [
+    {
+      "question": "What happens if I need to change price by exactly 15%?",
+      "category": "Pricing Authority",
+      "expected": "15% is within autonomous authority, no approval needed",
+      "base_answer": "If you need to change a price by exactly 15%, you should follow your company's pricing policy, which may include:\n\n1. **Approval Process**: Ensure you have the necessary approvals from management or relevant departments.\n2. **Documentation**: Document the reason for the price change and the new pricing structure.\n3. **Communication**: Inform affected customers and stakeholders about the price change in advance, if required.\n4. **Compliance**: Ensure the change complies with any applicable laws or regulations, such as pricing transparency or consumer protection laws.\n\nMake sure to check your company's specific guidelines for any additional steps required.",
+      "finetuned_answer": "A 15% price change exceeds the 10% automatic approval threshold. You must:\n\n1. Document the rationale for the change\n2. Submit for managerial approval\n3. Implement only after receiving approval\n\nFor significant pricing strategy changes, consider the competitive impact and customer perception.",
+      "base_score": 0.5,
+      "finetuned_score": 0.5
+    },
+    {
+      "question": "Can I reduce a product by 15.5%?",
+      "category": "Pricing Authority",
+      "expected": "No, exceeds 15% threshold, requires senior director approval",
+      "base_answer": "Yes, you can reduce a product's price by 15.5%, provided it complies with your company's pricing policies and any applicable regulations. Ensure that the reduction is clearly communicated to customers and that it aligns with your overall pricing strategy.",
+      "finetuned_answer": "Pricing changes should be in whole percentages for consistency. Round to 15% or 16% for your discount.",
+      "base_score": 0.0,
+      "finetuned_score": 0.0
+    },
+    {
+      "question": "What's the margin requirement difference between retail and marketplace products?",
+      "category": "Margin Requirements",
+      "expected": "Retail 25%, marketplace 15% - 10% difference",
+      "base_answer": "Margin requirements can vary significantly between retail and marketplace products due to differences in risk, inventory management, and pricing strategies. Typically, retail products may have higher margin requirements to account for direct sales and inventory costs, while marketplace products might have lower margins due to shared responsibilities with the platform and potentially lower overhead costs. \n\nFor specific margin requirements, it's best to consult your company's financial policies or the guidelines provided by the marketplace platform you are using, as these can differ widely based on the industry and specific agreements.",
+      "finetuned_answer": "Retail products typically require a minimum margin of 25-30%, while marketplace products can operate with 15-20% margins due to platform fees. However, strategic exceptions exist for competitive positioning or inventory clearance.",
+      "base_score": 1.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "If a marketplace product has 22% margin, can I list it?",
+      "category": "Margin Requirements",
+      "expected": "Yes, marketplace minimum is 15%",
+      "base_answer": "Whether you can list a marketplace product with a 22% margin depends on the specific policies of the marketplace you are using. Many marketplaces have minimum margin requirements, often around 15-20%, but this can vary. Check the marketplace's guidelines or terms of service to confirm if a 22% margin meets their criteria.",
+      "finetuned_answer": "Yes, 22% margin exceeds the 15% minimum requirement for marketplace products. You can proceed with the listing.",
+      "base_score": 1.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "What margin is required for a product that's both retail and marketplace?",
+      "category": "Margin Requirements",
+      "expected": "25% retail margin must be met",
+      "base_answer": "The required margin for a product that is sold both in retail and on a marketplace can vary based on several factors, including the company's pricing strategy, cost structure, and competitive landscape. Generally, a retail margin might range from 30% to 50%, while marketplace margins can be lower due to fees, often around 15% to 30%. \n\nIt's essential to analyze your specific costs, including production, shipping, and marketplace fees, to determine the appropriate margin for your products in both channels.",
+      "finetuned_answer": "The minimum margin requirement for products sold through both retail and marketplace channels is 25%. This ensures sufficient profitability across all sales channels.",
+      "base_score": 0.45,
+      "finetuned_score": 0.9
+    },
+    {
+      "question": "If a product goes out of stock Monday morning, when's the latest it can be restocked?",
+      "category": "In-Stock Management",
+      "expected": "Thursday morning - 72 hours maximum",
+      "base_answer": "The latest a product can be restocked depends on your company's specific inventory and restocking policies. Generally, it should be restocked as soon as possible to minimize lost sales. If there are no specific guidelines, aim to restock within a few days to maintain customer satisfaction. Check with your inventory management team for precise timelines.",
+      "finetuned_answer": "Restock should occur within 48 hours (by Wednesday morning) to maintain 95%+ in-stock rate. For high-demand items, aim for same-day or next-day restocking.",
+      "base_score": 0.5,
+      "finetuned_score": 0.5
+    },
+    {
+      "question": "We're at 94% in-stock rate. Is this acceptable?",
+      "category": "In-Stock Management",
+      "expected": "No, target is 95%",
+      "base_answer": "An in-stock rate of 94% is generally considered acceptable in many industries, as it indicates that you have a high level of product availability. However, the ideal rate can vary depending on your specific business goals, industry standards, and customer expectations. It's important to assess whether this rate meets your company's service level agreements and customer satisfaction targets. If you aim for a higher rate, consider strategies to improve inventory management and forecasting.",
+      "finetuned_answer": "**Minimum acceptable: 95%**. 94% is below target and may impact customer experience. Investigate root cause and implement corrective actions to regain target performance.",
+      "base_score": 0.5,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Can I have 96% in-stock rate?",
+      "category": "In-Stock Management",
+      "expected": "Yes, exceeds 95% target",
+      "base_answer": "Achieving a 96% in-stock rate is generally considered a good target for inventory management. However, whether you can achieve this rate depends on several factors, including your supply chain efficiency, demand forecasting accuracy, and inventory management practices. It's important to regularly review and adjust your inventory strategies to meet this goal. If you have specific constraints or challenges, addressing those will be key to improving your in-stock rate.",
+      "finetuned_answer": "**Target**: 95% in-stock rate (standard)\n**Achieving 96%**: Excellent performance, may require:\n- Proactive demand forecasting\n- Safety stock adjustments\n- Vendor reliability improvements\n- Rapid response to sales spikes\n\n**Note**: 96% is above target, but sustainable? Balance with inventory carrying costs.",
+      "base_score": 0.0,
+      "finetuned_score": 0.4
+    },
+    {
+      "question": "A vendor gave me $20 yesterday and $15 today. Can I keep both?",
+      "category": "Vendor Management",
+      "expected": "No, total exceeds $25 limit",
+      "base_answer": "No, you should not keep the money from the vendor. Accepting gifts or money from vendors can create a conflict of interest or the appearance of impropriety. It's best to report this to your supervisor or follow your company's policy on accepting gifts.",
+      "finetuned_answer": "No, you cannot keep either. The total of $35 exceeds the $25 limit for gifts. You must report this to your compliance officer immediately and either return the gifts or donate them to charity. All gifts must be disclosed and approved.",
+      "base_score": 0.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "What if a vendor offers a $25 gift card?",
+      "category": "Vendor Management",
+      "expected": "Acceptable, exactly at $25 limit",
+      "base_answer": "Accepting a $25 gift card from a vendor may violate company policies regarding gifts and conflicts of interest. It's important to review your company's gift policy, which typically outlines acceptable gift values and circumstances. If the gift exceeds the allowed limit or could be perceived as influencing business decisions, it should be declined or reported to a supervisor or the compliance department for guidance. Always prioritize transparency and adherence to company policies.",
+      "finetuned_answer": "According to company policy, you cannot accept gifts valued over $20. You should politely decline the gift or report it to your manager if declining is not possible. Acceptable gifts must be within the $20 limit and should not create a perception of favoritism or obligation.",
+      "base_score": 0.9,
+      "finetuned_score": 0.9
+    },
+    {
+      "question": "Can I sign a $250,000 contract without VP approval?",
+      "category": "Vendor Management",
+      "expected": "Yes, up to $250K is within authority",
+      "base_answer": "Typically, signing a contract of that value would require VP approval, as it exceeds the threshold for most companies' delegated authority limits. However, you should refer to your company's specific policies or consult with your legal or compliance department for confirmation.",
+      "finetuned_answer": "No, contracts exceeding $100,000 require VP approval and legal review.",
+      "base_score": 0.0,
+      "finetuned_score": 0.0
+    },
+    {
+      "question": "What about a $250,001 contract?",
+      "category": "Vendor Management",
+      "expected": "No, exceeds $250K threshold, requires VP approval",
+      "base_answer": "For a contract valued at $250,001, it typically falls under specific procurement regulations that may require additional compliance measures, such as competitive bidding or approval from higher authorities, depending on the organization's policies and applicable laws. It's important to consult your company's procurement policy or legal department for precise requirements related to contract approval, reporting, and compliance.",
+      "finetuned_answer": "A $250,001 contract exceeds the $250,000 threshold and requires:\n\n1. **Executive Approval**: Senior leadership must review and approve.\n2. **Legal Review**: Mandatory legal department review for all contracts.\n3. **Compliance Check**: Ensure all regulatory and compliance requirements are met.\n4. **Formal Documentation**: Comprehensive contract file with all approvals and reviews.\n\nNegotiations should not exceed $250,000 without pre-approval from leadership.",
+      "base_score": 1.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "A product has exactly 3.0 stars. Can I add it?",
+      "category": "Product Selection",
+      "expected": "Yes, meets 3.0 minimum",
+      "base_answer": "It depends on your company's specific policy regarding product ratings. Generally, if the policy states that only products with a rating above 3.0 stars can be added, then you would not be able to add it. If the policy allows for products with exactly 3.0 stars, then you can add it. Please check your company's guidelines for clarity.",
+      "finetuned_answer": "No, products must have a minimum of 3.1 stars to be added to the catalog.",
+      "base_score": 0.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Product has 2.95 stars. Is this acceptable?",
+      "category": "Product Selection",
+      "expected": "No, minimum 3.0 required",
+      "base_answer": "Whether a product with a 2.95-star rating is acceptable depends on your company's standards and policies regarding product quality and customer satisfaction. Generally, a rating below 3 stars may indicate issues that need to be addressed, such as product quality, customer service, or marketing. It may be advisable to investigate the reasons for the low rating and consider improvements or adjustments.",
+      "finetuned_answer": "No, 2.95 stars is below the 3.0 minimum threshold for product quality. Consider suppressing listing or improving product quality.",
+      "base_score": 0.5,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Return rate is exactly 15%. Can we continue selling?",
+      "category": "Product Selection",
+      "expected": "Yes, at maximum threshold but acceptable",
+      "base_answer": "Whether you can continue selling with a 15% return rate depends on your company's policies and the industry standards. Generally, a return rate of 15% is considered high in many sectors, which could indicate issues with product quality, customer satisfaction, or misalignment with customer expectations. \n\nYou should evaluate the reasons for the returns, consider implementing improvements, and monitor the impact on profitability. If the return rate is affecting your bottom line or customer perception, it may be wise to address the underlying issues before continuing to sell at the same rate.",
+      "finetuned_answer": "15% return rate is above the 10% threshold for review. You must:\n\n1. Analyze return reasons\n2. Implement corrective actions\n3. Monitor for improvement\n\nIf return rate does not improve within 30 days, consider pausing sales until issues are resolved. High return rates indicate customer dissatisfaction and can hurt vendor scorecard metrics.",
+      "base_score": 0.0,
+      "finetuned_score": 0.0
+    },
+    {
+      "question": "We hit 14.5% revenue growth. Did we meet target?",
+      "category": "KPI Targets",
+      "expected": "No, target is 15%",
+      "base_answer": "To determine if you met your target, you need to compare the 14.5% revenue growth to the specific target percentage set by your company. If the target was equal to or lower than 14.5%, then you met or exceeded the target. If the target was higher than 14.5%, then you did not meet it. Please check your company's target for confirmation.",
+      "finetuned_answer": "Yes, you exceeded the 12% target by 2.5%. Great job!",
+      "base_score": 1.0,
+      "finetuned_score": 0.5
+    },
+    {
+      "question": "Perfect order rate is 94.5%. Is this good enough?",
+      "category": "KPI Targets",
+      "expected": "No, target is 95%",
+      "base_answer": "A perfect order rate of 94.5% is generally considered good, as it indicates that a high percentage of orders are fulfilled accurately and on time. However, whether it is \"good enough\" can depend on industry standards, customer expectations, and company goals. Many companies aim for rates above 95% to ensure customer satisfaction and competitive advantage. It may be beneficial to analyze the reasons for the 5.5% of orders that are not perfect and identify areas for improvement.",
+      "finetuned_answer": "Yes, a 94.5% perfect order rate exceeds the 95% target threshold. However, it's important to maintain or improve this rate, as it directly impacts customer satisfaction and performance metrics. Regularly review any order issues to prevent recurrence.",
+      "base_score": 1.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Return rate is 8.5%. Is this within target?",
+      "category": "KPI Targets",
+      "expected": "No, exceeds 8% maximum",
+      "base_answer": "To determine if an 8.5% return rate is within target, you need to compare it to your company's specific return rate target. If the target is higher than 8.5%, then it is within target; if the target is lower, then it exceeds the target. Please check your company's return rate policy or target metrics for a definitive answer.",
+      "finetuned_answer": "Return rate target is \u22645%. At 8.5%, this is significantly above target and indicates potential quality or mismatch issues. Recommend investigating top return reasons and implementing corrective actions.",
+      "base_score": 1.0,
+      "finetuned_score": 0.5
+    },
+    {
+      "question": "Safety issue reported at 9am Monday. Latest removal time?",
+      "category": "Compliance",
+      "expected": "1pm Monday - 4 hours",
+      "base_answer": "The latest removal time for a safety issue typically depends on your company's specific policies and procedures. However, a common standard is to address safety issues within 24 hours. If the issue was reported at 9 AM on Monday, the latest removal time would generally be 9 AM on Tuesday. Please check your company's safety policy for any specific timelines.",
+      "finetuned_answer": "**72-hour maximum**: Must remove listing by 9am Thursday if no resolution. Safety takes priority over all other considerations.",
+      "base_score": 1.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "IP violation found Friday 5pm. When must we respond?",
+      "category": "Compliance",
+      "expected": "Saturday 5pm - 24 hours",
+      "base_answer": "Typically, you should respond to an IP violation as soon as possible, ideally within 24 to 48 hours. However, the specific timeframe may depend on your company's policies and any legal obligations. It's important to consult your legal team for guidance on the appropriate response time in your situation.",
+      "finetuned_answer": "**Immediate response required:**\n\n1. **Acknowledge receipt**: Within 24 hours (by Saturday 5pm)\n2. **Investigate**: Complete within 72 hours (by Tuesday 5pm)\n3. **Corrective action**: Implement within 5 business days if violation confirmed\n\n**Escalate** to legal team immediately upon receipt. IP issues are high priority and can lead to account suspension or legal action if not addressed promptly.",
+      "base_score": 1.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Can I submit weekly report Monday 11am?",
+      "category": "Reporting",
+      "expected": "No, due Monday 10am PST",
+      "base_answer": "It depends on your company's reporting policy. If the policy allows for weekly reports to be submitted by Monday at 11 am, then you can proceed. However, if there is a specific deadline or format required, make sure to adhere to those guidelines. Check with your supervisor or the relevant policy documents for confirmation.",
+      "finetuned_answer": "No, weekly reports are due by Monday 9am. Submitting at 11am is late and may affect team metrics. Plan to complete reports by Sunday evening to ensure timely submission.",
+      "base_score": 0.5,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "Today is February 14th. When's the forecast due?",
+      "category": "Reporting",
+      "expected": "Tomorrow, February 15th",
+      "base_answer": "The due date for the forecast typically depends on your company's specific reporting schedule. If you follow a monthly reporting cycle, the forecast is likely due at the end of the month, which would be February 28th. Please check your company's policy or calendar for any specific deadlines.",
+      "finetuned_answer": "Monthly forecasts are due on the 15th of each month. You have until the end of today to submit your February forecast.",
+      "base_score": 0.0,
+      "finetuned_score": 0.8
+    },
+    {
+      "question": "Can I plan a promotion 5 weeks in advance?",
+      "category": "Promotions",
+      "expected": "No, minimum 6 weeks required",
+      "base_answer": "Yes, you can plan a promotion 5 weeks in advance. However, ensure that you follow your company's policies regarding promotions, including any necessary approvals and compliance with marketing guidelines.",
+      "finetuned_answer": "Yes, 5 weeks is sufficient lead time for most promotions. Ensure you coordinate with marketing, inventory, and operations teams to align on timing and logistics.",
+      "base_score": 0.0,
+      "finetuned_score": 0.0
+    },
+    {
+      "question": "Lightning Deal with exactly 20% discount - is this allowed?",
+      "category": "Promotions",
+      "expected": "Yes, meets 20% minimum",
+      "base_answer": "Yes, a Lightning Deal with exactly a 20% discount is allowed, as long as it complies with the platform's pricing policies and guidelines. Ensure that the discount is clearly communicated and that the original price is accurately represented.",
+      "finetuned_answer": "No, Lightning Deals must have a minimum 25% discount. A 20% discount does not meet the criteria and would be rejected by the system.",
+      "base_score": 1.0,
+      "finetuned_score": 1.0
+    },
+    {
+      "question": "New hire completes training in 35 days. Is this acceptable?",
+      "category": "Training",
+      "expected": "No, must complete within 30 days",
+      "base_answer": "Whether completing training in 35 days is acceptable depends on your company's specific training policies and timelines. If the standard training period is longer or shorter, it may need to be evaluated against those benchmarks. Check your company's training guidelines or consult with HR for clarification.",
+      "finetuned_answer": "No, training should be completed within 30 days. 35 days exceeds the standard timeline by 5 days. Review the reasons for the delay and address any barriers to timely completion. Consistent delays may indicate performance issues that need to be managed.",
+      "base_score": 0.0,
+      "finetuned_score": 1.0
+    }
+  ]
+}
