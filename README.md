@@ -1,4 +1,4 @@
-# GPT-4o-Mini Fine-Tuning for Enterprise Policy Compliance
+# GPT-4 Fine-Tuning for Enterprise Policy Compliance
 
 **Keywords:** `OpenAI Fine-Tuning` `GPT-4o-Mini` `LLM Optimization` `Enterprise AI` `Policy Compliance` `Performance Benchmarking` `Token Efficiency` `Model Evaluation` `Python` `API Integration`
 
